@@ -43,11 +43,6 @@ target 'TestNativeUICompnent' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'TestNativeUICompnentTests' do
-    inherit! :complete
-    # Pods for testing
-  end
-
   post_install do |installer|
     react_native_post_install(
       installer,
